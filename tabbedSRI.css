@@ -7,19 +7,7 @@ body {
   margin: 0;
   padding: 100px; }
 a {
-    background: #fd264f;
-    color: #fff;
-    display: block;
-    font-size: 12px;
-    line-height: 1em;
-    margin: 0;
-    padding: 5px 110px;
-    position: fixed;
-    top: 20px;
-    right: -100px;
     text-align: center;
-    text-decoration: none;
-    transform: rotate(45deg);
 }
 button:focus,
 input:focus,
