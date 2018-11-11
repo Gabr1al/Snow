@@ -53,6 +53,7 @@ select:focus {
       border-bottom: 1px solid #fd264f; }
     .tabs [class^="tab"] [type="radio"]:checked,
     .tabs [class*=" tab"] [type="radio"]:checked {
+      background: #82051a;
       border-bottom: 2px solid #fd264f; }
     .tabs [class^="tab"] [type="radio"]:checked + div,
     .tabs [class*=" tab"] [type="radio"]:checked + div {
