@@ -57,7 +57,7 @@ select:focus {
       border-bottom: 2px solid #fd264f; }
     .tabs [class^="tab"] [type="radio"]:checked + div,
     .tabs [class*=" tab"] [type="radio"]:checked + div {
-      background: #82051a;
+      
       opacity: 1; }
     .tabs [class^="tab"] [type="radio"] + div,
     .tabs [class*=" tab"] [type="radio"] + div {
