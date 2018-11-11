@@ -23,6 +23,7 @@ select:focus {
   overflow: hidden; }
   .tabs [class^="tab"] label,
   .tabs [class*=" tab"] label {
+    background: #82051a;
     color: #000000;
     cursor: pointer;
     display: block;
