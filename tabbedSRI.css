@@ -11,6 +11,7 @@ select:focus {
   outline: none; }
 
 .tabs {
+  background: #82051a;
   display: block;
   display: -webkit-flex;
   display: -moz-flex;
