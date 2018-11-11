@@ -1,103 +1,99 @@
-@import "compass/css3";
-
-@import url("https://fonts.googleapis.com/css?family=Lato");
-
-$background: #9b59b6;
-$tabs-base-color: #8e44ad;
-* {
-  margin: 0;
-  padding: 0; 
-  @include box-sizing(border-box);
-}
 body {
-  padding: 20px;
-  text-align: left;
-  font-family: Lato;
-  color: #fff; 
-  background: $background;  
-}
+  background: #191828;
+  color: #efedef;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 1.6em;
+  margin: 0;
+  padding: 100px; }
 h1 {
-  font-weight: normal;
   font-size: 40px;
-  font-weight: normal;
-  text-transform: uppercase;
-  float: left;
-  margin: 20px 0 100px 10px; 
-  span { 
-    font-size: 13px;
-    display: block;
-    padding-left: 4px;
-  }
-}
-.tabs {
-  width: 650px;  
-  float: none;
-  list-style: none;
-  position: relative;
-  margin: 80px 0 0 10px;
-  text-align: left;
-  li {
-    float: left;
-    display: block;
-  }
-  input[type="radio"] {
-    position: absolute;
-    top: 0;
-    left: -9999px;
-  }
-  label {
-    display: block;
-    padding: 14px 21px;
-    border-radius: 2px 2px 0 0;
-    font-size: 20px;
-    font-weight: normal;
-    text-transform: uppercase;
-    background: $tabs-base-color;
-    cursor: pointer;
-    position: relative;
-    top: 4px; 
-    @include transition(all 0.2s ease-in-out);
-    &:hover {
-      background: darken($tabs-base-color, 10);
-    }
-  }
-  .tab-content{
-    z-index: 2;
-    display: none; 
-    overflow: hidden;
-    width: 100%;
-    font-size: 17px;
-    line-height: 25px;
-    padding: 25px;  
-    position: absolute;
-    top: 53px;
-    left: 0; 
-    background: darken($tabs-base-color, 15);
-  }
-  //The Magic
-  [id^="tab"]:checked + label { 
-    top: 0;
-    padding-top: 17px; 
-    background: darken($tabs-base-color, 15); 
-  }
-  [id^="tab"]:checked ~ [id^="tab-content"] {
-    display: block;
-  }
-}
-p.link {
-  clear: both;
-  margin: 380px 0 0 15px;
-  a {
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
+  line-height: 0.8em;
+  color: rgba(255,255,255,0.2);}
+a {
+    background: #fd264f;
     color: #fff;
-    padding: 5px 10px;
-    margin: 0 5px;
-    background-color: darken($tabs-base-color, 15);
-    @include transition(all 0.2s ease-in);
-    &:hover {
-      background-color: darken($tabs-base-color, 20);
-    }
-  }
-} 
+    display: block;
+    font-size: 12px;
+    line-height: 1em;
+    margin: 0;
+    padding: 5px 110px;
+    position: fixed;
+    top: 20px;
+    right: -100px;
+    text-align: center;
+    text-decoration: none;
+    transform: rotate(45deg);
+}
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none; }
+
+.tabs {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  overflow: hidden; }
+  .tabs [class^="tab"] label,
+  .tabs [class*=" tab"] label {
+    color: #efedef;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1em;
+    padding: 2rem 0;
+    text-align: center; }
+  .tabs [class^="tab"] [type="radio"],
+  .tabs [class*=" tab"] [type="radio"] {
+    border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+    .tabs [class*=" tab"] [type="radio"]:hover,
+    .tabs [class*=" tab"] [type="radio"]:focus {
+      border-bottom: 1px solid #fd264f; }
+    .tabs [class^="tab"] [type="radio"]:checked,
+    .tabs [class*=" tab"] [type="radio"]:checked {
+      border-bottom: 2px solid #fd264f; }
+    .tabs [class^="tab"] [type="radio"]:checked + div,
+    .tabs [class*=" tab"] [type="radio"]:checked + div {
+      opacity: 1; }
+    .tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+      display: block;
+      opacity: 0;
+      padding: 2rem 0;
+      width: 90%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out; }
+  .tabs .tab-2 {
+    width: 50%; }
+    .tabs .tab-2 [type="radio"] + div {
+      width: 200%;
+      margin-left: 200%; }
+    .tabs .tab-2 [type="radio"]:checked + div {
+      margin-left: 0; }
+    .tabs .tab-2:last-child [type="radio"] + div {
+      margin-left: 100%; }
+    .tabs .tab-2:last-child [type="radio"]:checked + div {
+      margin-left: -100%; }
