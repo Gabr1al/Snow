@@ -34,6 +34,7 @@ select:focus {
     text-align: center; }
   .tabs [class^="tab"] [type="radio"],
   .tabs [class*=" tab"] [type="radio"] {
+    background: #82051a;
     border-bottom: 1px solid rgba(239, 237, 239, 0.5);
     cursor: pointer;
     -webkit-appearance: none;
