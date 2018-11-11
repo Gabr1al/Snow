@@ -1,9 +1,10 @@
 body {
-  font-size: 16px;
-   }
+ 
+  margin: 0;
+  padding: 100px; }
 a {
     text-align: center;
-}
+ }
 button:focus,
 input:focus,
 textarea:focus,
