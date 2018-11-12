@@ -2,7 +2,7 @@ h1 {
   font-size: 26px;
   background: #ffffff;
   color: #000000;
-  padding: 40px 0 100px 20%;
+  padding: 40px 0 10px 20%;
   margin-bottom: 50px;
 }
 
@@ -21,8 +21,9 @@ input[type="radio"][name="tabs"] {
   z-index: -1;
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content label {
-  background: #ffffff;
-  color: #0000ff;
+  background: #82051a;
+  color: #ffffff;
+  font-weight: bold;
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
   display: block;
@@ -43,24 +44,24 @@ input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
 label {
   cursor: pointer;
   color: rgba(255, 255, 255, 0.8);
-  background-color: #00bcd4;
+  background-color: #c7c5c5;
   box-sizing: border-box;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 56px;
+  height: 55px;
   transition: color 0.2s ease;
   width: 100%;
 }
 
 .slide {
-  background: #ffeb3b;
+  background: #ff7f27;
   width: calc(100% / 3);
-  height: 4px;
+  height: 5px;
   position: absolute;
   left: 0;
-  top: calc(100% - 4px);
+  top: calc(100% - 5px);
   transition: left 0.3s ease-out;
 }
 
@@ -69,7 +70,7 @@ label {
 }
 .tab-label-content .tab-content {
   position: absolute;
-  top: 100px;
+  top: 70px;
   left: 16px;
   line-height: 130%;
   display: none;
@@ -98,7 +99,6 @@ label {
   box-sizing: border-box;
   color: white;
   transition: all 0.2s ease;
-  font-family: Roboto, sans-serif;
   text-decoration: none;
   box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.2);
 }
