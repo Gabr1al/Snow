@@ -118,3 +118,16 @@ label {
     margin: 400px auto 0;
   }
 }
+
+
+labelclean {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #000000;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+  width: 100%;
+}
