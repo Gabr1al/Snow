@@ -1,18 +1,12 @@
-html, body {
-  width: 100%;
-}
-
 h1 {
   font-size: 26px;
-  background: #00bcd4;
-  color: white;
+  background: #ffffff;
+  color: #000000;
   padding: 40px 0 100px 20%;
   margin-bottom: 50px;
 }
 
-label, p, a, h1, div {
-  font-family: Roboto, sans-serif;
-}
+
 
 .tab-wrap {
   width: 50%;
@@ -27,7 +21,8 @@ input[type="radio"][name="tabs"] {
   z-index: -1;
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content label {
-  color: white;
+  background: #ffffff;
+  color: #0000ff;
 }
 input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
   display: block;
