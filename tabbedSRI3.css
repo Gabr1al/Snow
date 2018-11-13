@@ -1,113 +1,67 @@
-*, *::before, *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  height: 100vh;
-  width: 100%;
-}
-
-<!--
-body {
+/**
+ * Tabs
+ */
+.tabs {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-  font: 14px/1.5 'Open Sans',sans-serif;
-  color: #345;
-  background: #f0f2f4;
+  flex-wrap: wrap;
 }
 
--->
-
-p:not(:last-child) {
-  margin: 0 0 20px;
-}
-
-main {
-  width: 95%;
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background: #fff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-section {
-  display: none;
-  padding: 20px 0 0;
-  border-top: 1px solid #82051a;
-}
-
-input {
-  display: none;
-}
-
-label {
-  display: inline-block;
-  margin: 0 0 -1px;
-  padding: 15px 25px;
-  font-weight: 600;
-  text-align: center;
-  color: #abc;
-  border: 1px solid transparent;
-}
-
-label:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 10px;
-}
-
-<!--
-label[for*='1']:before {
-  content: '\f1cb';
-}
-
-label[for*='2']:before {
-  content: '\f17d';
-}
-
-label[for*='3']:before {
-  content: '\f16c';
-}
-
--->
-
-label:hover {
-  color: #789;
+.tabs label {
+  order: 1;
+  display: block;
+  padding: 1rem 2rem;
+  margin-right: 0.2rem;
   cursor: pointer;
-}
-
-input:checked + label {
-  color: #ffffff;
-  background: #82051a;
+  background: #90CAF9;
   font-weight: bold;
-  border: 1px solid #abc;
-  border-top: 2px solid #ff7f27;
-  border-bottom: 1px solid #fff;
+  transition: background ease 0.2s;
 }
 
-#tab1:checked ~ #content1,
-#tab2:checked ~ #content2,
-#tab3:checked ~ #content3,
-#tab4:checked ~ #content4 {
+.tabs .tab {
+  order: 99;
+  flex-grow: 1;
+  width: 100%;
+  display: none;
+  padding: 1rem;
+  background: #fff;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+}
+
+.tabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
 
-@media screen and (max-width: 800px) {
-  label {
-    font-size: 0;
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
   }
 
-  label:before {
-    margin: 0;
-    font-size: 18px;
+  .tabs label {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 0.2rem;
   }
 }
-@media screen and (max-width: 500px) {
-  label {
-    padding: 15px;
-  }
+/**
+ * Generic Styling
+*/
+body {
+  background: #eee;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding-top: 10vh;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 60rem;
+  margin: 0 auto;
+  font-size: 112%;
 }
