@@ -12,7 +12,7 @@
   padding: 1rem 2rem;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #90CAF9;
+  background: #82051a;
   font-weight: bold;
   transition: background ease 0.2s;
 }
@@ -61,7 +61,5 @@ body {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 300;
   line-height: 1.5;
-  width: 95%;
   margin: 0 auto;
-  font-size: 112%;
 }
