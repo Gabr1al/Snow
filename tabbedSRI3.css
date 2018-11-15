@@ -31,12 +31,12 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #ffffff;
+  background: #fffffff;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
   display: block;
-} 
+}
 
 @media (max-width: 45em) {
   .tabs .tab,
