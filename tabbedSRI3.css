@@ -33,6 +33,7 @@
 .tabs input[type="radio"]:checked + label {
   background: #82051a;
   color: #ffffff;
+  border-bottom: 3px solid #ff7f27;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -55,11 +56,9 @@
  * Generic Styling
 */
 body {
-  min-height: 100vh;
+/**  min-height: 100vh; */
   box-sizing: border-box;
   padding-top: 10px;
-  font-weight: 300;
   line-height: 1.5;
   margin: 0 auto;
-  font-size: 100%;
 }
