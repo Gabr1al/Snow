@@ -9,12 +9,12 @@
 .tabs label {
   order: 1;
   display: block;
-  padding: 0px 0px;
+  padding: 20px 50px;
   margin-right: 0.2rem;
   cursor: pointer;
-  background: #82051a;
+  background: #c7c5c5;
   font-weight: bold;
-  transition: background ease 0.5s;
+  transition: background ease 0.7s;
 }
 
 .tabs .tab {
@@ -22,8 +22,8 @@
   flex-grow: 1;
   width: 100%;
   display: none;
-  padding: 1rem;
-  background: #fffffff;
+  padding: 10px;
+  background: #ffffff;
 }
 
 .tabs input[type="radio"] {
@@ -31,7 +31,8 @@
 }
 
 .tabs input[type="radio"]:checked + label {
-  background: #fffffff;
+  background: #82051a;
+  color: #ffffff;
 }
 
 .tabs input[type="radio"]:checked + label + .tab {
@@ -48,18 +49,17 @@
     width: 100%;
     margin-right: 0;
     margin-top: 0.2rem;
-    font-color: #ffffff;
   }
 }
 /**
  * Generic Styling
 */
 body {
-  background: #eee;
   min-height: 100vh;
   box-sizing: border-box;
-  padding-top: 10vh;
+  padding-top: 10px;
   font-weight: 300;
   line-height: 1.5;
   margin: 0 auto;
+  font-size: 100%;
 }
