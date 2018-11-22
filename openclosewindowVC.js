@@ -1,6 +1,6 @@
 function openwindow(link)
 {
-  windwow.open(link);
+  window.open(link);
   
   return false;
   
