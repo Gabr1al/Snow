@@ -5,6 +5,10 @@ function openwindow(link)
   return false;
   
 }
+function openwindow1(link)
+{
+ window.location.replace(link); 
+}
 
 function closewindow()
 {
