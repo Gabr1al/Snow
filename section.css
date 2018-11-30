@@ -1,16 +1,7 @@
-.readme {
-  color: #fff;
-  margin: 0 auto;
-  width: 80%;
-  
-}
-
-/*_________________  Accordion
-________________________________________*/
 .accordion {
-  position: relative;
-  margin: 60px auto;
-  width: 90%;
+  position: center;
+
+  width: 95%;
 }
 
 [id*="open-accordion"] {
