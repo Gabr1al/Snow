@@ -1,7 +1,7 @@
 .accordion {
   position: center;
 
-  width: 95%;
+  width: 100%;
 }
 
 [id*="open-accordion"] {
