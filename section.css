@@ -1,38 +1,36 @@
-input {
-  display: none;
-  visibility: hidden;
+.controls {
+ text-align: right;
+ margin-bottom: 1em;
 }
-label {
+
+.controls li {
+  display: inline;
+}
+
+button {
+  background: #000;
+  color: #fff;
+  border: 0;
+  font-size: 0.85rem;
+  border-radius: 0.25rem;
+}
+
+/*
+Custom elements are inline by default
+*/
+toggle-section {
   display: block;
-  padding: 0.5em;
-  text-align: left;
-  border-bottom: 1px solid #CCC;
 }
-label:hover {
-  color: #000;
+
+/*
+Only applies if script runs and 
+`role="region"` is added
+*/
+toggle-section[role="region"] {
+  border-width: 2px 0;
+  border-style: solid;
 }
-label::before {
-  font-weight: bold;
-  font-size: 15px;
-  content: "+";
-  vertical-align: text-top;
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 3px;
-  background: radial-gradient(ellipse at left, #82051a, transparent 50%);
-}
-#expand {
-  height: 0px;
-  overflow: hidden;
-  transition: height 0.5s;
-}
-section {
-  padding: 0 20px;
-}
-#toggle:checked ~ #expand {
-  height: 250px;
-}
-#toggle:checked ~ label::before {
-  content: "-";
+
+toggle-section[role="region"] + toggle-section {
+  border-top: 0;
 }
