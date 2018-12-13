@@ -26,6 +26,7 @@
   display: none;
   padding: 10px;
   background: #ffffff;
+  text-align: center;
 }
 
 .tabs input[type="radio"] {
