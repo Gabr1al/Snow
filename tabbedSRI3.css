@@ -26,6 +26,7 @@
   display: none;
   padding: 10px;
   background: #ffffff;
+  
 }
 
 .tabs input[type="radio"] {
@@ -42,7 +43,7 @@
   display: block;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 500) {
   .tabs .tab,
   .tabs label {
     order: initial;
