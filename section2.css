@@ -9,6 +9,7 @@
   overflow: hidden;
   margin-bottom: 0.25rem;
   border: 0.063rem solid silver;
+  width: 95%;
 }
 .accordion .item:hover label.menulabel {
   color: #82051a;
@@ -19,8 +20,7 @@
   width: 100%;
   border-bottom: 0.063rem solid gray;
   cursor: pointer;
-  position: absolute;
-  left: 3.5rem;
+  position: relative;
   padding: 5px;
   overflow: hidden;
 }
