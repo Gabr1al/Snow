@@ -36,12 +36,12 @@ li {
   color: #82051a;
 }
 .accordion .item label.menulabel {
-  font-size: 1rem;
+  font-size: 2rem;
   display: block;
   width: 100%;
   border-bottom: 0.063rem solid gray;
   cursor: pointer;
-  position: relative;
+  position: left;
   padding: 5px;
   overflow: hidden;
 }
