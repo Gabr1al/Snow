@@ -1,0 +1,110 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #06c;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.separador {
+  margin-top: 4rem;
+}
+
+xx-small {
+  font-size: 0.6rem;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 1rem;
+}
+
+.last {
+  margin-bottom: 2rem;
+}
+
+.accordion .item {
+  color: #000000;
+  background: #c7c5c5;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.25rem;
+  border: 0.063rem solid silver;
+}
+.accordion .item:hover label.menulabel {
+  color: #82051a;
+}
+.accordion .item label.menulabel {
+  font-size: 1rem;
+  display: block;
+  width: 100%;
+  border-bottom: 0.063rem solid gray;
+  cursor: pointer;
+  position: relative;
+  padding: 5px;
+  overflow: hidden;
+}
+.accordion .item label.menulabel:after {
+  display: none;
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 3.5rem;
+  margin-top: -20px;
+  font-size: 40px;
+  color: #000000;
+  transition: -webkit-transform 0.2s ease-out;
+  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+}
+.accordion .item input[type="radio"],
+.accordion .item input[type="checkbox"] {
+  position: absolute;
+  z-index: 1;
+}
+.accordion .item input[type="radio"][hidden="hidden"],
+.accordion .item input[type="checkbox"][hidden="hidden"] {
+  visiblity: hidden;
+}
+.accordion .item input[type="radio"][hidden="hidden"] + label:after,
+.accordion .item input[type="checkbox"][hidden="hidden"] + label:after {
+  display: block;
+}
+.accordion .item input[type="radio"]:checked ~ .accordion-content,
+.accordion .item input[type="checkbox"]:checked ~ .accordion-content {
+  padding: 1rem 1.25rem;
+  height: auto;
+  line-height: 1.5rem;
+}
+.accordion .item input[type="radio"]:checked + label.menulabel,
+.accordion .item input[type="checkbox"]:checked + label.menulabel {
+  color: #ffffff;
+  background: #82051a;
+}
+.accordion .item input[type="radio"]:checked + label.menulabel:after,
+.accordion .item input[type="checkbox"]:checked + label.menulabel:after {
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  color: #ffffff;
+}
+.accordion .item .accordion-content {
+  padding: 0 1.25rem;
+  height: 0;
+  color: #000000;
+  background: #ffffff;
+  overflow: hidden;
+  transition: padding 0.2s ease;
+  -webkit-transition: padding 0.2s ease;
+  -moz-transition: padding 0.2s ease;
+}
